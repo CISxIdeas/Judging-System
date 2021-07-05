@@ -1,0 +1,13 @@
+{% extends "hackathon/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div id="app"></div>
+    <script type="text/javascript">
+            IS_USER_AUTH = false
+        {% if user.is_authenticated %}
+            IS_USER_AUTH = true;
+        {%  endif %}
+    </script>
+    <script src="{% static 'main.js' %}"></script>
+{% endblock %}

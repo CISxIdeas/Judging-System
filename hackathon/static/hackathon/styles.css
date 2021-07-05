@@ -1,0 +1,343 @@
+/* Navigation Bar */
+.navbar .navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-item .nav-link {
+    margin: 6px;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.navbar {
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 8px;
+}
+
+body, html {
+    height: 99%;
+}
+
+.title-container {
+    display: table;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    /*height: 100%;*/
+    width: 100%;
+}
+
+.middle-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.register-container {
+    padding: 8px;
+}
+
+.typewriter {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.typewriter h1 {
+    vertical-align: middle;
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    margin: 0 auto;
+    animation: animated-text 3s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+}
+
+.typewriter-left h1 {
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    animation: animated-register 1.5s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-register {
+    from {
+        width: 0;
+    }
+    to {
+        width: 265px;
+    }
+}
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 472px;
+    }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(0, 255, 0, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.register {
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 8px;
+}
+
+
+/* for Join Page */
+.center {
+    font-family: 'Source Code Pro', monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.center-names {
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    width: 80%;
+}
+
+
+.pin-btn {
+    background-color: rgba(0, 255, 0, .75);
+    color: black;
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 200, 0, .75);
+    border: 1px solid rgba(0, 200, 0, .75);
+}
+
+
+/* for judging page*/
+.team-list-judge {
+    /*border-left-color: rgba(0, 255, 0, .75);*/
+    border: 1px solid #ededed;
+}
+
+/*
+ *  Judge Page
+ */
+.judge-page {
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.team-cards-judge, .slider-msg {
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+.pick-team-button {
+    margin: 2px;
+}
+
+/*.criteria-judge {*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.crit-btn {*/
+/*    float: left;*/
+/*    padding: 8px;*/
+/*}*/
+
+.criteria-text {
+    float: left;
+    padding: 8px;
+}
+
+.vote-btn {
+    padding: 12px;
+}
+
+/*.slider-msg {*/
+/*    font-size: large;*/
+/*    color: darkgreen;*/
+/*    font-weight: bold;*/
+/*}*/
+/*
+ * End Judge Page
+ */
+
+/* Responsive template from w3schools and bootstrap */
+/* https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_webpage&stacked=h */
+/* https://getbootstrap.com/docs/4.0/components/navbar/ */
+
+
+/*
+ * Side Nav on Judge
+ */
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    height: 100%;
+}
+
+.b-btn {
+    background-color: white;
+    color: black;
+}
+
+.b-btn:hover {
+    background-color: rgb(0, 255, 0);
+    color: black;
+}
+
+.sb-btn:hover {
+    background-color: rgb(222, 255, 183);
+    color: black;
+}
+
+.sb-btn {
+    background-color: white;
+    color: black;
+
+}
+
+/*
+ * End Sidenav on Judge
+ */
+
+
+/* Create new Hackathon - CreateEvent.js */
+
+.create-form-container {
+    font-family: 'Source Code Pro', monospace;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    /*height: 100%;*/
+    width: 60%;
+}
+
+.typewriter .event-label {
+    vertical-align: middle;
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    margin: 0 auto;
+    animation: animated-text 3s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* END Create new Hackathon */
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+
+    .navbar .navbar-brand {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .navbar .nav-item .nav-link {
+        font-size: 14px;
+    }
+
+    .center-names {
+        font-family: 'Source Code Pro', monospace;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: auto;
+    }
+
+    .typewriter h1 {
+        vertical-align: middle;
+        border-right: solid 3px rgba(0, 255, 0, .75);
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+        margin: 0 auto;
+        animation: animated-text 3s steps(29, end) 1s 1 normal both,
+        animated-cursor 600ms steps(29, end) infinite;
+    }
+
+    .typewriter .event-label {
+        vertical-align: middle;
+        border-right: solid 3px rgba(0, 255, 0, .75);
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+        margin: 0 auto;
+        animation: animated-text 3s steps(29, end) 1s 1 normal both,
+        animated-cursor 600ms steps(29, end) infinite;
+    }
+
+    @keyframes animated-register {
+        from {
+            width: 0;
+        }
+        to {
+            width: 265px;
+        }
+    }
+
+    /* text animation */
+    @keyframes animated-text {
+        from {
+            width: 0;
+        }
+        to {
+            width: 236px;
+        }
+    }
+
+    .b-btn {
+        font-size: 12px;
+    }
+
+    .sb-btn {
+        font-size: 12px;
+    }
+
+    .create-form-container {
+        font-family: 'Source Code Pro', monospace;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: auto;
+        margin: 4px;
+    }
+
+    .criteria-text {
+        font-size: 14px;
+    }
+}
+
+
+
+
